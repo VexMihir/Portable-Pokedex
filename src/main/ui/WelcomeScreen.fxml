@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="539.0" style="-fx-background-color: #1e2769#1e2769;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.WelcomeScreenController">
+    <children>
+      <Pane prefHeight="110.0" prefWidth="539.0" style="-fx-background-color: #ff3842#ff3842;">
+         <children>
+            <ImageView fitHeight="75.0" fitWidth="304.0" layoutX="168.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/International_Pokémon_logo.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+        <Pane fx:id="pane1" layoutY="110.0" prefHeight="538.0" prefWidth="539.0" style="-fx-background-color: #1e2769#1e2769;">
+            <children>
+                <Separator layoutX="54.0" layoutY="36.0" opacity="0.15" prefHeight="3.0" prefWidth="423.0" />
+                <Button fx:id="trainer" layoutX="156.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#trainerOptions" prefHeight="35.0" prefWidth="219.0" style="-fx-background-color: #FCBB31 #FCBB31;" text="TRAINER OPTIONS" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Courier Bold" size="20.0" />
+               </font></Button>
+            <Button fx:id="srchPokemon" layoutX="156.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#searchPokemon" prefHeight="35.0" prefWidth="219.0" style="-fx-background-color: #FCBB31 #FCBB31;" text="SEARCH POKEMON" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Courier Bold" size="20.0" />
+               </font></Button>
+            <Button fx:id="rndPokemon" layoutX="156.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#random" prefHeight="35.0" prefWidth="219.0" style="-fx-background-color: #FCBB31 #FCBB31;" text="RANDOM POKEMON" textFill="WHITE">
+               <font>
+                  <Font name="Courier Bold" size="20.0" />
+               </font></Button>
+            <Button fx:id="exit" layoutX="424.0" layoutY="491.0" mnemonicParsing="false" onMouseClicked="#exit" prefHeight="17.0" prefWidth="107.0" style="-fx-background-color: #FCBB31 #FCBB31;" text="EXIT" textFill="WHITE">
+               <font>
+                  <Font name="Courier Bold" size="18.0" />
+               </font>
+            </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

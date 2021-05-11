@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="647.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.LoadingOutController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="539.0">
+         <children>
+            <ImageView fitHeight="740.0" fitWidth="709.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/rsz_11screen-1.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="167.0" layoutY="275.0" text="Shutting Down ..." textFill="WHITE">
+               <font>
+                  <Font name="Courier Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="cross" layoutX="484.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#closeProgram" style="-fx-background-color: #ff3842;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Courier Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
