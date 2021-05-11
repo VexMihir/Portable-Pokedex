@@ -1,6 +1,7 @@
 # My Personal Project
 
 ## Portable Pokedex
+### Academic Project, UBC
 
 This project is a **Portable Pokedex**. 
 
